@@ -7,14 +7,14 @@
 # db = client.dbsparta
 
 # doc = {
-#     'name':'name a',
-#     'about_me':'about_me a',
+#     'name':'김희석',
+#     'about_me':'https://dilution0216.tistory.com/',
 #     'photo':'photo a',
-#     'imoge':'imoge a',
-#     'Q1':'Q1 a',
-#     'Q2':'Q2 a',
-#     'Q3':'Q3 a',
-#     'Q4':'Q4 a',
+#     'imoge':'🍓',
+#     'Q1':'HTML, JavaScript, CSS, Python(flask,Django)',
+#     'Q2':'매사에 최선을 다하고자 노력합니다',
+#     'Q3': 'ESTJ',
+#     'Q4':'딸기와 딸기라떼를 좋아합니다',
 # }
 # db.profiles.insert_one(doc) 
 
