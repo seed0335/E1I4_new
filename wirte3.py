@@ -10,7 +10,7 @@ doc = {
     'imoge':'💍',
     'Q1':'html, css, javascript, java, python',
     'Q2':'근육이 잘 붙는 몸을 소유함',
-    'Q3':'모든게 쏠려있는 극 ISTP',
+    'Q3':'모든게 100%! 쏠려있는 극 ISTP',
     'Q4':'아침 헬스 좋아해요!'
  }
 db.profiles.insert_one(doc) 
