@@ -3,6 +3,8 @@ app = Flask(__name__)
 
 import certifi
 ca = certifi.where()
+#제발
+bb = aa
 
 # mongoDB는 김장원 - 본인 mongoDB로 변경하기
 from pymongo import MongoClient
