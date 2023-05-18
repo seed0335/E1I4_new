@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        #form {
+            background-color: antiquewhite;
+            width: 300px;
+            height: 400px;
+            text-align: center;
+        }
+    </style>
+<script>
+//  A : 데이터 보내기
+function save() {
+    let id = $('#name').val()
+    let comment = $('#comment').val()
+
+    let formData = new FormData()
+    formData.append("id_give", id)
+    formData.append("comment_give", comment)
+
+    fetch("/subA1", { method: "post", body: formData }).then(res => res.json()).then(data => {
+        alert(data['msg'])
+        window.location.reload()
+    })
+}
+</script>
+
+
+<body>
+    <div id="form">
+    <form action="/action_page.php" >
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+    </div>
+
+    <div class="mytxt">
+        <h3><b> 개인 관람평 </b></h3>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name" placeholder="url" />
+            <label for="floatingInput">닉네임</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="comment"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">관람평</label>
+        </div>
+        <div class="mybtn">
+            <button onclick="save()" type="button" class="btn btn-outline-dark">등록하기</button>
+        </div>
+    
+        <br>
+    
+        <table class="table">
+            <thead id = "subB1">
+                <tr >
+                    <th scope="col">닉네임</th>
+                    <th scope="col">관람평</th>
+                    <th scope="col">삭제</th>
+                </tr>
+            </thead>
+    </div>
+</body>
+</html>
