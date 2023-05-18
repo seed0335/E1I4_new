@@ -9,7 +9,7 @@
 # doc = {
 #     'name':'이은비',
 #     'about_me':'https://velog.io/@owiiwo',
-#     'photo':'photo a',
+#     'photo':'<img src="https://ca.slack-edge.com/T043597JK8V-U051WD9LCNP-45ff45329ac6-512" class="img"alt="..."></a>',
 #     'imoge':'🍜',
 #     'Q1':'HTML, JavaScript, CSS, Python(flask)',
 #     'Q2':'밝고 긍정적이다!',
